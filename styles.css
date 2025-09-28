@@ -1,0 +1,128 @@
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración general */
+body {
+    font-family: Arial, sans-serif, Calibri, sans-serif;
+    background-color: #f0f8ff; /* Celeste pálido */
+    color: #333; /* Texto en negro */
+    line-height: 1.6;
+}
+
+/* Estilo del header */
+header {
+    background-color: #4fbcca; /* Celeste pálido */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título dentro del header */
+header h1 {
+    color: #333; /* Texto en negro */
+    font-size: 2.5rem;
+}
+
+/* Estilo del menú de navegación fuera del header */
+nav {
+    background-color: #b0e0e6; /* Celeste pálido */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Texto en negro */
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4682b4; /* Azul más oscuro en hover */
+}
+
+/* Estilo del contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+main h2 {
+    color: #333; /* Texto en negro */
+    margin-bottom: 20px;
+}
+
+/* Estilo del footer */
+footer {
+   background-color: #4fbcca;  /* Azul oscuro */
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo para dispositivos móviles (opcional) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Modal (ventana emergente) */
+.modal {
+    display: none; /* Inicialmente está oculto */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal p {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+}
+
+/* Barra de progreso */
+.progress-bar-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #4682b4;
+    border-radius: 5px;
+}
