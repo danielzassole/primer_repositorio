@@ -67,6 +67,18 @@ main h2 {
     margin-bottom: 20px;
 }
 
+
+#p_img {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
 /* Estilo del footer */
 footer {
    background-color: #4fbcca;  /* Azul oscuro */
@@ -126,3 +138,4 @@ footer {
     background-color: #4682b4;
     border-radius: 5px;
 }
+
